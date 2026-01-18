@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Splitter</title>
+    <link rel="stylesheet" href="../styles/App.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Smart Expense Splitter</h1>
+</header>
+
+<main class="container">
+
+    <!-- INPUT SECTION -->
+    <section class="top-section">
+
+        <!-- ADD EXPENSE -->
+        <section class="card">
+            <h2>Add Expense</h2>
+
+            <div class="form-group">
+                <input type="text" placeholder="Expense name">
+                <input type="number" placeholder="Amount" step="0.01">
+                <button>Add Expense</button>
+            </div>
+        </section>
+
+        <!-- ADD PEOPLE -->
+        <section class="card">
+            <h2>Add People</h2>
+
+            <div class="form-group">
+                <input type="text" placeholder="Person name">
+                <button>Add Person</button>
+            </div>
+
+            <div class="list-section">
+                <div class="person-item">
+                    <span class="person-name">John</span>
+                    <button class="delete-btn">Remove</button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- OUTPUT SECTION -->
+    <section class="top-section">
+
+        <!-- EXPENSE LIST -->
+        <section class="card">
+            <h2>Expenses</h2>
+
+            <div class="list-section">
+                <article class="expense-item">
+                    <div class="expense-info">
+                        <h3>Dinner</h3>
+                        <p>Paid by John</p>
+                    </div>
+                    <span class="expense-amount">$50</span>
+                    <button class="delete-btn">Delete</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- SUMMARY -->
+        <section class="card summary-card">
+            <h2>Split Summary</h2>
+
+            <div class="split-item">
+                <span>Sarah owes John</span>
+                <strong>$25</strong>
+            </div>
+
+            <div class="total">
+                <span>Total</span>
+                <strong>$50</strong>
+            </div>
+        </section>
+
+    </section>
+
+</main>
+
+</body>
+</html>
